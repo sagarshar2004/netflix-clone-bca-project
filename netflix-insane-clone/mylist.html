@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My List • Netflix Clone</title>
+
+  <!-- same browse.css use karna ho to ye rakho -->
+  <link rel="stylesheet" href="browse.css" />
+
+  <!-- extra small styling for mylist page -->
+  <style>
+    .page-wrap{
+      padding:90px 40px 60px;
+      min-height:100vh;
+      background:#000;
+      color:#fff;
+    }
+    .page-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .page-head h1{
+      margin:0;
+      font-size:32px;
+    }
+    .head-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .btn{
+      border:none;
+      cursor:pointer;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .btn-dark{
+      background:rgba(109,109,110,0.35);
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.15);
+    }
+    .btn-red{
+      background:#e50914;
+      color:#fff;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .card2{
+      background:#111;
+      border:1px solid rgba(255,255,255,0.12);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 14px 30px rgba(0,0,0,0.55);
+      display:flex;
+      flex-direction:column;
+    }
+    .card2 img{
+      width:100%;
+      height:140px;
+      object-fit:cover;
+      display:block;
+    }
+    .card2-body{
+      padding:12px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .card2-title{
+      margin:0;
+      font-size:16px;
+      font-weight:900;
+      line-height:1.2;
+    }
+    .card2-meta{
+      margin:0;
+      color:#bbb;
+      font-size:13px;
+      font-weight:700;
+    }
+    .card2-actions{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:6px;
+    }
+    .btn-play{
+      background:#fff;
+      color:#000;
+    }
+    .btn-remove{
+      background:rgba(229,9,20,0.15);
+      color:#fff;
+      border:1px solid rgba(229,9,20,0.55);
+    }
+    .empty{
+      margin-top:28px;
+      padding:18px;
+      border:1px dashed rgba(255,255,255,0.2);
+      border-radius:14px;
+      color:#bbb;
+      max-width:560px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR (same style) -->
+  <div class="navbar">
+    <div class="logo">NETFLIX</div>
+
+    <div class="nav-right">
+      <a href="browse.html" class="mylist-link">← Back to Browse</a>
+      <div class="search-box">
+        <input id="mySearch" placeholder="Search in My List..." />
+      </div>
+    </div>
+  </div>
+
+  <div class="page-wrap">
+    <div class="page-head">
+      <h1>My List</h1>
+
+      <div class="head-actions">
+        <button id="clearAll" class="btn btn-red">Clear All</button>
+        <button id="refreshBtn" class="btn btn-dark">Refresh</button>
+      </div>
+    </div>
+
+    <div id="emptyState" class="empty" style="display:none;">
+      Your list is empty. Go back to Browse and add some shows ✅
+    </div>
+
+    <div id="myGrid" class="grid"></div>
+  </div>
+
+  <script src="mylist.js"></script>
+</body>
+</html>

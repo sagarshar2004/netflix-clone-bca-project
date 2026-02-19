@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - Netflix Clone</title>
+<link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+<nav>
+  <h1 class="logo">NETFLIX</h1>
+</nav>
+
+<div class="signup-box">
+
+  <h2>Create Account</h2>
+
+  <input type="text" placeholder="Full Name">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+
+  <button onclick="goHome()">Sign Up</button>
+
+  <p>Already have an account? 
+    <a href="signin.html">Sign In</a>
+  </p>
+
+</div>
+
+<script>
+function goHome(){
+  alert("Account Created Successfully 😎");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

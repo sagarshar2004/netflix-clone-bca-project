@@ -1,0 +1,109 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:#000;
+  color:#fff;
+}
+
+.landing{
+  height:100vh;
+  background:url('https://assets.nflxext.com/ffe/siteui/vlv3/...');
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.landing::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+}
+
+.nav{
+  position:absolute;
+  top:20px;
+  left:40px;
+  right:40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:2;
+}
+
+.logo{
+  color:#e50914;
+  font-size:32px;
+  font-weight:bold;
+}
+
+.btn-red{
+  background:#e50914;
+  padding:8px 16px;
+  color:#fff;
+  text-decoration:none;
+  border-radius:4px;
+}
+
+.center-content{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:2;
+  width:80%;
+}
+
+.center-content h1{
+  font-size:48px;
+}
+
+.email-box{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+}
+
+.email-box input{
+  padding:15px;
+  width:300px;
+  border:none;
+  outline:none;
+}
+
+.email-box button{
+  background:#e50914;
+  border:none;
+  padding:15px 20px;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.auth-box{
+  width:350px;
+  margin:120px auto;
+  background:rgba(0,0,0,0.8);
+  padding:40px;
+  border-radius:6px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.auth-box input{
+  padding:12px;
+  background:#333;
+  border:none;
+  color:#fff;
+}
+
+.auth-box button{
+  padding:12px;
+  background:#e50914;
+  border:none;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="browse.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">NETFLIX</div>
+
+    <div class="nav-right">
+      <a href="mylist.html" class="mylist-link">My List</a>
+
+      <div class="search-box">
+        <input id="search" placeholder="Titles, people, genres">
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- BACKGROUND VIDEO -->
+    <video id="bgVideo" autoplay muted loop playsinline>
+      <source id="bgSource" src="videos/stranger.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+      <h1 id="heroTitle">Stranger Things</h1>
+      <p id="heroDesc">Watch Season 4 Now</p>
+
+      <div class="buttons">
+        <button id="playBtn">▶ Play</button>
+        <button class="list">+ My List</button>
+      </div>
+    </div>
+
+    <!-- ARROWS -->
+    <button id="leftArrow" class="arrow left">&#10094;</button>
+    <button id="rightArrow" class="arrow right">&#10095;</button>
+
+  </section>
+
+  <!-- CONTINUE WATCHING -->
+  <div class="cat" id="continueSection" style="display:none;">
+    <h2>Continue Watching</h2>
+    <div class="cat-row" id="continueRow"></div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div id="categories"></div>
+
+  <!-- DETAILS MODAL (ONLY ONE!) -->
+  <div id="detailsModal" class="modal" style="display:none;">
+    <div class="modal-box">
+      <span id="closeModal" class="modal-close">✕</span>
+
+      <div class="modal-left">
+        <img id="modalPoster" src="" alt="poster">
+      </div>
+
+      <div class="modal-right">
+        <h2 id="modalTitle">Title</h2>
+        <div id="modalMeta" class="modal-meta">Category • 2026 • 16+</div>
+        <p id="modalDesc" class="modal-desc">Description...</p>
+
+        <div class="modal-actions">
+          <button id="modalPlay" class="modal-play">▶ Play Trailer</button>
+          <button id="modalAdd" class="modal-add">+ My List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        This website is a personal educational project inspired by Netflix.
+        It is not affiliated with, endorsed by, or connected to Netflix Inc.
+      </p>
+      <p class="copyright">
+        © 2026 Sagar Sharma | Built for learning purposes only.
+      </p>
+    </div>
+  </footer>
+
+  <script src="browse.js"></script>
+</body>
+</html>

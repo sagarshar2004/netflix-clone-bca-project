@@ -1,0 +1,70 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:black;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  padding:20px 60px;
+}
+
+.logo{
+  color:red;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* SIGNIN BOX */
+.signin-box{
+  width:350px;
+  background:rgba(0,0,0,0.8);
+  padding:40px;
+  margin:80px auto;
+  border-radius:6px;
+  text-align:center;
+}
+
+.signin-box h2{
+  margin-bottom:25px;
+}
+
+.signin-box input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:4px;
+}
+
+.signin-box button{
+  width:100%;
+  padding:12px;
+  background:red;
+  border:none;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.signin-box button:hover{
+  background:#e50914;
+}
+
+.signin-box p{
+  margin-top:20px;
+  font-size:14px;
+}
+
+.signin-box a{
+  color:red;
+  text-decoration:none;
+}

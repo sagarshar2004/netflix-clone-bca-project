@@ -1,0 +1,70 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:black;
+  color:white;
+}
+
+/* NAVBAR */
+nav{
+  padding:20px 60px;
+}
+
+.logo{
+  color:red;
+  font-size:32px;
+  font-weight:bold;
+}
+
+/* SIGNUP BOX */
+.signup-box{
+  width:350px;
+  background:rgba(0,0,0,0.8);
+  padding:40px;
+  margin:80px auto;
+  border-radius:6px;
+  text-align:center;
+}
+
+.signup-box h2{
+  margin-bottom:25px;
+}
+
+.signup-box input{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:4px;
+}
+
+.signup-box button{
+  width:100%;
+  padding:12px;
+  background:red;
+  border:none;
+  color:white;
+  font-size:16px;
+  font-weight:bold;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.signup-box button:hover{
+  background:#e50914;
+}
+
+.signup-box p{
+  margin-top:20px;
+  font-size:14px;
+}
+
+.signup-box a{
+  color:red;
+  text-decoration:none;
+}
